@@ -106,8 +106,8 @@ class GroundwaterChatbot:
             current_dir = os.path.dirname(os.path.abspath(__file__))
             
             # Try relative path first
-            rainfall_path = "../data/rainfall.csv"
-            groundwater_path = "../data/groundwater.csv"
+            rainfall_path = "data/rainfall.csv"
+            groundwater_path = "data/groundwater.csv"
             
             if not os.path.exists(rainfall_path):
                 # Try absolute path
@@ -139,7 +139,7 @@ class GroundwaterChatbot:
             current_dir = os.path.dirname(os.path.abspath(__file__))
             
             # Try relative path first
-            model_path = "../models/groundwater_predictor.pkl"
+            model_path = "models/groundwater_predictor.pkl"
             
             if not os.path.exists(model_path):
                 # Try absolute path
