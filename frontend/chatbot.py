@@ -143,7 +143,7 @@ class GroundwaterChatbot:
             
             if not os.path.exists(model_path):
                 # Try absolute path
-                model_path = os.path.join(current_dir, "..", "models", "groundwater_predictor.pkl")
+             model_path = os.path.join(current_dir, "..", "models", "groundwater_predictor.pkl")
             
             self.model = joblib.load(model_path)
         except Exception as e:
