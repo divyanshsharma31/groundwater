@@ -519,7 +519,7 @@ def show_modern_dashboard():
     @st.cache_data
     def load_regions():
         import geopandas as gpd
-        return gpd.read_file("../data/regions.geojson")
+        return gpd.read_file("data/regions.geojson")
     
     try:
         regions = load_regions()
