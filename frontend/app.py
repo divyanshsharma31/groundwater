@@ -612,8 +612,8 @@ def show_analytics():
     # Load data for analytics
     @st.cache_data
     def load_analytics_data():
-        rainfall = pd.read_csv("../data/rainfall.csv")
-        groundwater = pd.read_csv("../data/groundwater.csv")
+        rainfall = pd.read_csv("data/rainfall.csv")
+        groundwater = pd.read_csv("data/groundwater.csv")
         return rainfall, groundwater
     
     rainfall, groundwater = load_analytics_data()
