@@ -11,7 +11,7 @@ import numpy as np
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Import the chatbot
-from chatbot import GroundwaterChatbot
+import chatbot 
 
 # Page configuration
 st.set_page_config(
