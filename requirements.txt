@@ -6,4 +6,4 @@ geopandas
 folium
 streamlit-folium
 joblib
-sklearn
+scikit-learn
