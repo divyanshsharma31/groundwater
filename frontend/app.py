@@ -340,8 +340,8 @@ def show_modern_dashboard():
     # Load data
     @st.cache_data
     def load_data():
-        rainfall = pd.read_csv("../data/rainfall.csv")
-        groundwater = pd.read_csv("../data/groundwater.csv")
+        rainfall = pd.read_csv("/data/rainfall.csv")
+        groundwater = pd.read_csv("/data/groundwater.csv")
         return rainfall, groundwater
     
     rainfall, groundwater = load_data()
