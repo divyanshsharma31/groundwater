@@ -139,11 +139,11 @@ class GroundwaterChatbot:
             current_dir = os.path.dirname(os.path.abspath(__file__))
             
             # Try relative path first
-             model_path = os.path.join(current_dir, "groundwater_predictor.pkl")  # Correct path
+            model_path = os.path.join(current_dir, "groundwater_predictor.pkl")  # Correct path
             
             if not os.path.exists(model_path):
                 # Try absolute path
-             model_path = os.path.join(current_dir, "..", "models", "groundwater_predictor.pkl")
+            model_path = os.path.join(current_dir, "..", "models", "groundwater_predictor.pkl")
             
             self.model = joblib.load(model_path)
         except Exception as e:
